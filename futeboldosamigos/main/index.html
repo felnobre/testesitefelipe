@@ -31,7 +31,9 @@
     <link href="navbar.css" rel="stylesheet">
     <link href="sticky-footer.css" rel="stylesheet">
     <link href="carousel.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+
     <script>
       function splitjogador(nome, qtde) {
         var result = nome.split(" ", qtde).join(" ");
@@ -41,8 +43,29 @@
       //Tratamento do Click - Confirmacao da pelada
       $(document).ready(function(){
         $("#confirmacao_sim_1").click(function(){
-          console.log("it works!");
+          $("#confirmacao_sim_1").attr('class', 'p-1 d-none');
+          $("#confirmacao_sim_2").attr('class', 'p-1 d-block');
+          $("#confirmacao_nao_1").attr('class', 'p-1 d-block');
+          $("#confirmacao_nao_2").attr('class', 'p-1 d-none');
         });
+
+        $("#confirmacao_sim_2").click(function(){
+          $("#confirmacao_sim_1").attr('class', 'p-1 d-block');
+          $("#confirmacao_sim_2").attr('class', 'p-1 d-none');
+        });
+
+        $("#confirmacao_nao_1").click(function(){
+          $("#confirmacao_sim_1").attr('class', 'p-1 d-block');
+          $("#confirmacao_sim_2").attr('class', 'p-1 d-none');
+          $("#confirmacao_nao_1").attr('class', 'p-1 d-none');
+          $("#confirmacao_nao_2").attr('class', 'p-1 d-block');
+        });
+
+        $("#confirmacao_nao_2").click(function(){
+          $("#confirmacao_nao_1").attr('class', 'p-1 d-block');
+          $("#confirmacao_nao_2").attr('class', 'p-1 d-none');
+        });
+
       });
     </script>
   </head>
