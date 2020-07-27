@@ -30,6 +30,13 @@
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
     <link href="sticky-footer.css" rel="stylesheet">
+
+    <script>
+      function splitjogador(nome, qtde) {
+        var result = nome.split(" ", qtde).join(" ");
+        document.write(result);
+      }
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-dark  fixed-top" style="background-color: #536987;">
@@ -67,7 +74,9 @@
         <div class="d-flex flex-row bd-highlight mb-3  rounded border border-dark  shadow" style="background-color: #b3c9e9;">
           <div class="p-0 bd-highlight"><img src="../img/felipe_platini.JPG" width="90" height="90" class="img-thumbnail rounded-circle"></div>
           <div class="d-flex flex-column bd-highlight mb-3 align-self-center">
-            <div class="p-0 bd-highlight "><b>Felipe Platini</b>
+            <div class="p-0 bd-highlight ">
+              <b><script>splitjogador("Phelipe Irineu balãozinho", 2);</script>
+              </b>
               &nbsp;<img src="../img/Soccer_Ball_icon-icons.com_76265.png" alt="Posição Ballons" width="20" height="20"> (7&deg;)</div>
             <div class="p-0 bd-highlight"><img src="../img/trofeu_mini.png" alt="Campeonatos"><b>&nbsp; x 4</b></div>
             <div class="p-0 bd-highlight"><img src="../img/campo_mini.png" alt="Vitórias Campão"><b>&nbsp; x 5</b></div>
@@ -95,6 +104,41 @@
       </div>
     </div>
   </main>
+</div>
+<div class="table-responsive-sm">
+<table class="table table-hover table-sm shadow">
+  <thead class="thead-dark text-center">
+    <th scope="col" colspan="4">Ballon d'Or 2020</th>
+  </thead>
+  <thead class="thead-light">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Jogador</th>
+      <th scope="col" class="text-center">Participa&ccedil;&otilde;es</th>
+      <th scope="col" class="text-center">Presen&ccedil;as</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><img src="../img/star_gold_32.png" width="20" height="20"></th>
+      <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
+      <td class="text-center">11</td>
+      <td class="text-center">12</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="../img/star_silver_32.png" width="20" height="20"></th>
+      <td><script>splitjogador("Phelipe Irineu balãozinho", 2);</script></td>
+      <td class="text-center">10</td>
+      <td class="text-center">13</td>
+    </tr>
+    <tr>
+      <th scope="row"><img src="../img/star_bronze_32.png" width="20" height="20"></th>
+      <td><script>splitjogador("Márcio Mossoró Aí Nãoooo de Arrascaeta", 2);</script></td>
+      <td class="text-center">8</td>
+      <td class="text-center">12</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 <p>
