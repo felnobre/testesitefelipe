@@ -1,45 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
-    <title>Futebol dos Amigos</title>
-
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="../css/navbar.css" rel="stylesheet">
+<head>
+  <title>Futebol dos Amigos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-  </head>
-  <body>
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+  
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 70px;
+    position: fixed;
+    width: 50px;
+  }
+  div.col-8 div {
+    height: 2000px;
+  }
+
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1" class="bg-light">
+
     <nav class="navbar navbar-dark  fixed-top" style="background-color: #536987;">
-     <a class="navbar-brand" href="#">
-      <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">Futebol dos Amigos
-     </a>
+        <a class="navbar-brand" href="#">
+         <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+         Futebol dos Amigos
+        </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+    
       <div class="collapse navbar-collapse" id="navbarsExample01">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -58,21 +52,121 @@
       </div>
     </nav>
 
-
-  
-    <main role="main">
-      <div class="jumbotron">
-        <div class="col-sm-8 mx-auto">
-          
+<div class="container-fluid p-0">
+  <div class="row">
+    <nav class="col-sm-3 col-4" id="myScrollspy">
+        <ul class="nav nav-pills flex-column p-0 nav-left">
+            <li class="nav-item">
+            <a class="nav-link active" href="#section1">Pagamento</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section2">Ausência</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section3">Novo mensalista</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section4">Confirmação</a>
+            </li>                  
+            <li class="nav-item">
+            <a class="nav-link" href="#section5">Avulsos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section6">Escalação</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section7">Colete</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section8">Partidas</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section9">Jogo</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section10">Sanções</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#section11">Ballons D’Or</a>
+            </li>
+      </ul>
+    </nav>
+    <div class="col-sm-9 col-8 pt-5">
+        <div id="section1" class="text-sm-left">
+            <h4>Pagamento</h4>
+            <p>O mensalista deverá realizar o pagamento da mensalidade até o 2º sábado de cada mês. Após esse período, ocorrerá COBRANÇA DE MULTA, no valor de R$ 5,00 reais</p>
+            <p>Se a INADIMPLÊNCIA permanecer pelo 2º mês consecutivo sem uma justificativa, o colaborador será automaticamente EXCLUÍDO do Grupo.</p>
         </div>
-    
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
-        </script>
-        <script src="../assets/dist/js/bootstrap.bundle.js"></script>
-
-      </div>
-    </main>    
-  </body>
+        <div id="section2" class="text-sm-left">
+          <h4>Ausência</h4>
+          <p>Se algum mensalista se ausentar por um período igual ou superior a 90 dias, por motivo de trabalho, doença ou contusão, ficará isento da mensalidade. Caso o período de ausência for menor que o período citado, deverá pagar a mensalidade normalmente.</p>
+        </div>
+        <div id="section3" class="text-sm-left">
+          <h4>Novo mensalista</h4>
+          <p>A inclusão de um novo jogador como mensalista ocorrerá mediante indicação, e deverá respeitar a sequência da lista de espera. Este será mensalista temporário durante a avaliação do grupo. Caso seja aprovado, será efetivado como mensalista.</p>
+        </div>
+        <div id="section4" class="text-sm-left">
+          <h4>Confirmação</h4>
+          <p>O mensalista deverá confirmar a presença nos jogos pelo site até quinta-feira às 18 hs. Caso tenhamos menos do que 21 mensalistas jogadores de linha confirmados (23 mensalistas no período do horário de verão), será aberta convocação para avulsos.</p>
+        </div>
+        <div id="section5" class="text-sm-left">
+          <h4>Avulsos</h4>
+          <p>O jogador avulso, sob nenhuma hipótese, poderá participar da pelada sem sua confirmação e/ou liberação.</p>
+          <p>O mensalista que levar um convidado terá a obrigatoriedade de levar o colete que será emprestado a este e devolver no sábado seguinte lavado. É obrigatório o convidado avulso levar uma camisa na cor Branca e uma camisa na cor Azul para caso não tenha colete disponível.</p>
+          <p>Será cobrado ao avulso a quantia de R$12,00</p>
+        </div>
+        <div id="section6" class="text-sm-left">
+          <h4>Escalação</h4>
+          <p>A escalação dos times será por ordem de chegada. Os mensalistas têm a prioridade na escalação para a primeira partida.</p>
+          <p>Porém, os mensalistas de linha que estiverem presentes mas que não confirmaram presença no site até quinta-feira 18 hs, não poderão jogar a primeira partida, e cederão sua vaga a outro mensalista ou avulso, nesta ordem.Esta mesma regra se aplicará aos mensalistas que na semana anterior confirmaram presença no site mas que efetivamente não compareceram para jogar.</p>
+          <p>O jogador que solicitar que não participe da próxima partida com o seu time, por qualquer que seja o motivo (inclusive contusão), só poderá voltar a jogar duas partidas após ao último time da "de fora".</p>
+          <p>Exemplo 1 - Caso haja um time na "de fora", o atleta só poderá retornar a jogar no terceiro time da "de fora";</p>
+          <p>Exemplo 2 - Caso haja dois times na "de fora", o atleta só poderá retornar a jogar no quarto time da "de fora".</p>
+          <p>O time da de fora, pode escolher os jogadores que ficarão para completar a de dentro, independente do número ou seqüência de jogos dos escolhidos. Caso não haja escolha, usa-se o bom senso, e é tirado na sorte os que completarão a de fora.</p>
+          <p>Os times da de fora serão tirados a partir de sorteios entre os próprios atletas.</p>
+          <p>O time "de fora" estando completo com 7 jogadores e houver o SORTEIO (caso no momento se faça necessário o sorteio), o peladeiro "atrasado" jogará somente na próxima partida. Por isso, vale lembrar a importância de se tirar logo os sorteados para jogar ou sair na "De Fora".</p>
+        </div>
+        <div id="section7" class="text-sm-left">
+          <h4>Colete</h4>
+          <p>Em caso de perda ou extravio do colete, será cobrado R$ 20,00 do mensalista que solicitar novo colete.</p>
+        </div>
+        <div id="section8" class="text-sm-left">
+          <h4>Partidas</h4>
+          <p>A duração das partidas será de 10 minutos ou 2 gols e a definição do empate será:</p>
+          <p>Com 1 time na de fora, o time vencedor da partida anterior sairá (pois a vantagem do empate é do time que entra da de fora).</p>
+          <p>Com 1 time e mais alguns na de fora (não temos 2 times na de fora), a regra acima continuará valendo. Assim, os outros que completam a de fora mas que não formam 1 time ficarão 2 peladas na espera;</p>
+          <p>Com 14 jogadores na de fora, em caso de empate os 2 times que estavam jogando saem para a entrada dos jogadores da de fora.</p>
+          <p>OBS : Se na primeira partida do dia ocorrer empate, o desempate será feito através de par ou ímpar.</p>
+          <p>As bolas isoladas para longe do campo são de responsabilidade da "De Fora" buscar.</p>
+        </div>
+        <div id="section9" class="text-sm-left">
+          <h4>Jogo</h4>
+          <p>Qualquer falta fora da área, deverá ser cobrada com dois toques.</p>
+          <p>Qualquer falta e ou bola na mão dentro da área, será tiro livre direto sem barreira(Pênalti).</p>
+          <p>O jogador que colocar a mão na bola intencionalmente ou segurar o adversário de qualquer forma (colete, braço, etc ) será penalizado por dois minutos fora da partida corrente e haverá cobrança direta para o gol sem barreira na posição em que a falta for cometida (ou será cobrado o penalti caso a falta/mão na bola tenha sido dentro da área).</p>
+        </div>
+        <div id="section10" class="text-sm-left">
+          <h4>Sanções</h4>
+          <p>Punições de Suspensão/Expulsão de atletas:</p>
+          <p>- Se um atleta agir agressivamente e for de encontro ao outro atleta para tomar satisfação ("partir para cima"), este atleta será suspenso da pelada e ficará automaticamente fora do sábado subsequente;</p>
+          <p>- Se um atleta agredir fisicamente outro, esse atleta será sumariamente excluído do grupo.</p>
+          <p>Se a administração da pelada identificar displicência de algum atleta com relação ao isolamento da bola, será cobrado uma taxa de 50 reais para a compra de uma nova bola.</p>
+        </div>
+        <div id="section11" class="text-sm-left">
+          <h4>Ballons D’Or</h4>
+          <p>Ranking criado em 2014 que lista, ao final de cada pelada, os jogadores dos times que mais venceram na pelada (Está incluído no horário da pelada acréscimos ao horário final da pelada ou tempo extra, caso houver).</p>
+          <p>Não é contabilizada como vitória do time caso o horário da pelada final se encerre antes do time ter feito os gols necessários.</p>
+          <p>Ao final do ano são divulgados os três primeiros atletas que compõem o ranking do ano corrente.</p>
+        </div>
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous">
+    </script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+    </script>
+    <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+</body>
 </html>
