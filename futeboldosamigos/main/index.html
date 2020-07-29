@@ -28,9 +28,9 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
-    <link href="sticky-footer.css" rel="stylesheet">
-    <link href="carousel.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+    <link href="../css/sticky-footer.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
 
@@ -42,6 +42,7 @@
 
       //Tratamento do Click - Confirmacao da pelada
       $(document).ready(function(){
+        //Confirmacoes pelo usuario comum
         $("#confirmacao_sim_1").click(function(){
           $("#confirmacao_sim_1").attr('class', 'p-1 d-none');
           $("#confirmacao_sim_2").attr('class', 'p-1 d-block');
@@ -65,6 +66,9 @@
           $("#confirmacao_nao_1").attr('class', 'p-1 d-block');
           $("#confirmacao_nao_2").attr('class', 'p-1 d-none');
         });
+
+        //Confirmacoes pelo adm
+        
 
       });
     </script>
@@ -100,8 +104,8 @@
 
   
   <main role="main">
-    <div class="jumbotron ">
-      <div class="col-sm-8 mx-auto">
+    <div class="jumbotron">
+      <div class="col-md-15 mx-auto">
         <div class="d-flex flex-row bd-highlight mb-3  rounded border border-dark shadow" style="background-color: #b3c9e9;">
           <div class="p-0 bd-highlight"><img src="../img/felipe_platini.JPG" width="90" height="90" class="img-thumbnail rounded-circle"></div>
           <div class="d-flex flex-column bd-highlight mb-3 align-self-center">
@@ -123,11 +127,11 @@
           <div class="p-1 d-none" id="confirmacao_nao_2"><img src="../img/confirmacao_nao_ok_preenchido.png" alt="Confirmação pelada" width="25" height="25"></div>
         </div>
 
-        <div class="accordion border border-dark rounded shadow" id="accordionConfirmacoes">
+        <div class="accordion" id="accordionConfirmacoes">
           <div class="card border-dark bg-transparent text-light">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed p-0 text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-link btn-block text-left collapsed p-0 text-dark text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <div class="d-flex flex-row mb-0">
                     <div class="p-1 d-block"><img src="../img/confirmacao_ok_2.png" alt="Confirmação pelada" width="25" height="25"></div>
                     <div>Confirmados:&nbsp;</div>
@@ -144,8 +148,8 @@
                     <tr>
                       <th scope="row">1</th>
                       <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center"><img class="d-block" src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center"><img class="d-none" src="../img/confirmacao_question.png" width="20" height="20"></td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
@@ -210,7 +214,7 @@
           <div class="card border-dark bg-transparent text-dark">
             <div class="card-header" id="headingTwo">
               <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed p-0 text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-link btn-block text-left collapsed p-0 text-dark text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <div class="d-flex flex-row mb-0">
                     <div class="p-1 d-block"><img src="../img/confirmacao_nao_ok_2.png" alt="Confirmação pelada" width="25" height="25"></div>
                     <div>Ausentes:&nbsp;</div>
@@ -262,11 +266,11 @@
           <div class="card border-dark bg-transparent text-dark">
             <div class="card-header" id="headingThree">
               <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed p-0 text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-link btn-block text-left collapsed p-0 text-dark text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <div class="d-flex flex-row mb-0">
                     <div class="p-1 d-block"><img src="../img/confirmacao_question.png" alt="Confirmação pelada" width="25" height="25"></div>
-                    <div>Não informado:&nbsp;</div>
-                    <div>7</div>
+                    <div class="align-self-center">Não informado:&nbsp;</div>
+                    <div class="align-self-center">7</div>
                   </div>   
                 </button>
               </h2>
@@ -324,50 +328,46 @@
             </div>
           </div>
         </div>
-      </div>
-<br>    
-  
-
-<div class="table-responsive-sm">
-<table class="table table-hover table-sm table-dark shadow rounded">
-  <thead class=" text-center">
-    <th scope="col" colspan="4" class="table-primary">Ballon d'Or 2020</th>
-  </thead>
-  <thead class="thead-light">
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Jogador</th>
-      <th scope="col" class="text-center">Participa&ccedil;&otilde;es</th>
-      <th scope="col" class="text-center">Presen&ccedil;as</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"><img src="../img/star_gold_32.png" width="20" height="20"></th>
-      <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
-      <td class="text-center">11</td>
-      <td class="text-center">12</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../img/star_silver_32.png" width="20" height="20"></th>
-      <td><script>splitjogador("Phelipe Irineu balãozinho", 2);</script></td>
-      <td class="text-center">10</td>
-      <td class="text-center">13</td>
-    </tr>
-    <tr>
-      <th scope="row"><img src="../img/star_bronze_32.png" width="20" height="20"></th>
-      <td><script>splitjogador("Márcio Mossoró Aí Nãoooo de Arrascaeta", 2);</script></td>
-      <td class="text-center">8</td>
-      <td class="text-center">12</td>
-    </tr>
-    <tr>
-      <!-- Button trigger modal -->
-      <td colspan="4"><a data-toggle="modal" href="#ModalBallons">Mais...</a></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+        <br>
+        <div class="table-responsive-sm">
+          <table class="table table-hover table-sm table-dark shadow rounded">
+            <thead class=" text-center">
+              <th scope="col" colspan="4" class="table-primary">Ballon d'Or 2020</th>
+            </thead>
+            <thead class="thead-light">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Jogador</th>
+                <th scope="col" class="text-center">Participa&ccedil;&otilde;es</th>
+                <th scope="col" class="text-center">Presen&ccedil;as</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><img src="../img/star_gold_32.png" width="20" height="20"></th>
+                <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
+                <td class="text-center">11</td>
+                <td class="text-center">12</td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="../img/star_silver_32.png" width="20" height="20"></th>
+                <td><script>splitjogador("Phelipe Irineu balãozinho", 2);</script></td>
+                <td class="text-center">10</td>
+                <td class="text-center">13</td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="../img/star_bronze_32.png" width="20" height="20"></th>
+                <td><script>splitjogador("Márcio Mossoró Aí Nãoooo de Arrascaeta", 2);</script></td>
+                <td class="text-center">8</td>
+                <td class="text-center">12</td>
+              </tr>
+              <tr>
+                <!-- Button trigger modal -->
+                <td colspan="4"><a class="text-decoration-none" data-toggle="modal" href="#ModalBallons">Mais...</a></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
 <!-- Modal para exibir os jogadores que estao no Ballons -->
 <div class="modal fade" id="ModalBallons" tabindex="-1" role="dialog" aria-labelledby="ModalBallonsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
@@ -468,7 +468,7 @@
   </div>
 </div>
 
-  <div id="carouselBallons" class="carousel slide carousel-fade rounded border border-dark  shadow" data-ride="carousel" data-interval="3000">
+<div id="carouselBallons" class="carousel slide carousel-fade rounded border border-dark  shadow" data-ride="carousel" data-interval="3000">
   <ol class="carousel-indicators">
     <li data-target="#carouselBallons" data-slide-to="0" class="active"></li>
     <li data-target="#carouselBallons" data-slide-to="1"></li>
@@ -518,7 +518,6 @@
   </a>
 </div>
 
-<br>
 <div class="d-flex flex-row mb-3 border border-dark table-primary">
   <h6>Enquete</h6>
 </div> 
@@ -537,9 +536,6 @@
     <option value="5">27/11/2020</option>
   </select>
 </div>
-
-<br>
-
 <p class = "text-center">
   <a href="#">Voltar ao topo</a>
 </p>
@@ -548,6 +544,9 @@
     <span class="text-muted">&copy;Futebol dos Amigos 2004-<script>document.write(new Date().getFullYear())</script></span>
   </div>
 </footer>
+
+
+</div> <!-- fim <div class="col-sm-8 mx-auto"> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
   crossorigin="anonymous">
