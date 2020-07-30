@@ -40,7 +40,7 @@
         document.write(result);
       }
 
-      //Tratamento do Click - Confirmacao da pelada
+      //Tratamento do Click e MouseOver/Out - Confirmacao da pelada
       $(document).ready(function(){
         //Confirmacoes pelo usuario comum
         $("#confirmacao_sim_1").click(function(){
@@ -69,7 +69,467 @@
 
         //Confirmacoes pelo adm
         
+        //Confirmacoes - Jogador 1
+        $("#confirmados_desconfirmar_1").mouseover(function(){
+          $("#confirmados_desconfirmar_1").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_1").attr('class', 'd-block');
+        });
 
+        $("#confirmados_desconfirmar_preenc_1").mouseout(function(){
+          $("#confirmados_desconfirmar_1").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_1").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_1").mouseover(function(){
+          $("#confirmados_naoinformar_1").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_1").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_1").mouseout(function(){
+          $("#confirmados_naoinformar_1").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_1").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 2
+        $("#confirmados_desconfirmar_2").mouseover(function(){
+          $("#confirmados_desconfirmar_2").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_2").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_2").mouseout(function(){
+          $("#confirmados_desconfirmar_2").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_2").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_2").mouseover(function(){
+          $("#confirmados_naoinformar_2").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_2").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_2").mouseout(function(){
+          $("#confirmados_naoinformar_2").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_2").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 3
+        $("#confirmados_desconfirmar_3").mouseover(function(){
+          $("#confirmados_desconfirmar_3").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_3").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_3").mouseout(function(){
+          $("#confirmados_desconfirmar_3").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_3").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_3").mouseover(function(){
+          $("#confirmados_naoinformar_3").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_3").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_3").mouseout(function(){
+          $("#confirmados_naoinformar_3").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_3").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 4
+        $("#confirmados_desconfirmar_4").mouseover(function(){
+          $("#confirmados_desconfirmar_4").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_4").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_4").mouseout(function(){
+          $("#confirmados_desconfirmar_4").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_4").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_4").mouseover(function(){
+          $("#confirmados_naoinformar_4").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_4").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_4").mouseout(function(){
+          $("#confirmados_naoinformar_4").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_4").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 5
+        $("#confirmados_desconfirmar_5").mouseover(function(){
+          $("#confirmados_desconfirmar_5").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_5").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_5").mouseout(function(){
+          $("#confirmados_desconfirmar_5").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_5").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_5").mouseover(function(){
+          $("#confirmados_naoinformar_5").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_5").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_5").mouseout(function(){
+          $("#confirmados_naoinformar_5").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_5").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 6
+        $("#confirmados_desconfirmar_6").mouseover(function(){
+          $("#confirmados_desconfirmar_6").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_6").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_6").mouseout(function(){
+          $("#confirmados_desconfirmar_6").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_6").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_6").mouseover(function(){
+          $("#confirmados_naoinformar_6").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_6").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_6").mouseout(function(){
+          $("#confirmados_naoinformar_6").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_6").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 7
+        $("#confirmados_desconfirmar_7").mouseover(function(){
+          $("#confirmados_desconfirmar_7").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_7").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_7").mouseout(function(){
+          $("#confirmados_desconfirmar_7").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_7").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_7").mouseover(function(){
+          $("#confirmados_naoinformar_7").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_7").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_7").mouseout(function(){
+          $("#confirmados_naoinformar_7").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_7").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 8
+        $("#confirmados_desconfirmar_8").mouseover(function(){
+          $("#confirmados_desconfirmar_8").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_8").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_8").mouseout(function(){
+          $("#confirmados_desconfirmar_8").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_8").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_8").mouseover(function(){
+          $("#confirmados_naoinformar_8").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_8").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_8").mouseout(function(){
+          $("#confirmados_naoinformar_8").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_8").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 9
+        $("#confirmados_desconfirmar_9").mouseover(function(){
+          $("#confirmados_desconfirmar_9").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_9").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_9").mouseout(function(){
+          $("#confirmados_desconfirmar_9").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_9").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_9").mouseover(function(){
+          $("#confirmados_naoinformar_9").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_9").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_9").mouseout(function(){
+          $("#confirmados_naoinformar_9").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_9").attr('class', 'd-none');
+        });
+
+        //Confirmacoes - Jogador 10
+        $("#confirmados_desconfirmar_10").mouseover(function(){
+          $("#confirmados_desconfirmar_10").attr('class', 'd-none');
+          $("#confirmados_desconfirmar_preenc_10").attr('class', 'd-block');
+        });
+
+        $("#confirmados_desconfirmar_preenc_10").mouseout(function(){
+          $("#confirmados_desconfirmar_10").attr('class', 'd-block');
+          $("#confirmados_desconfirmar_preenc_10").attr('class', 'd-none');
+        });
+
+        $("#confirmados_naoinformar_10").mouseover(function(){
+          $("#confirmados_naoinformar_10").attr('class', 'd-none');
+          $("#confirmados_naoinformar_preenc_10").attr('class', 'd-block');
+        });
+
+        $("#confirmados_naoinformar_preenc_10").mouseout(function(){
+          $("#confirmados_naoinformar_10").attr('class', 'd-block');
+          $("#confirmados_naoinformar_preenc_10").attr('class', 'd-none');
+        });
+
+        //Desconfirmacoes - Jogador 1
+        $("#desconfirmados_confirmar_1").mouseover(function(){
+          $("#desconfirmados_confirmar_1").attr('class', 'd-none');
+          $("#desconfirmados_confirmar_preenc_1").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_confirmar_preenc_1").mouseout(function(){
+          $("#desconfirmados_confirmar_1").attr('class', 'd-block');
+          $("#desconfirmados_confirmar_preenc_1").attr('class', 'd-none');
+        });
+
+        $("#desconfirmados_naoinformar_1").mouseover(function(){
+          $("#desconfirmados_naoinformar_1").attr('class', 'd-none');
+          $("#desconfirmados_naoinformar_preenc_1").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_naoinformar_preenc_1").mouseout(function(){
+          $("#desconfirmados_naoinformar_1").attr('class', 'd-block');
+          $("#desconfirmados_naoinformar_preenc_1").attr('class', 'd-none');
+        });
+
+        //Desconfirmacoes - Jogador 2
+        $("#desconfirmados_confirmar_2").mouseover(function(){
+          $("#desconfirmados_confirmar_2").attr('class', 'd-none');
+          $("#desconfirmados_confirmar_preenc_2").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_confirmar_preenc_2").mouseout(function(){
+          $("#desconfirmados_confirmar_2").attr('class', 'd-block');
+          $("#desconfirmados_confirmar_preenc_2").attr('class', 'd-none');
+        });
+
+        $("#desconfirmados_naoinformar_2").mouseover(function(){
+          $("#desconfirmados_naoinformar_2").attr('class', 'd-none');
+          $("#desconfirmados_naoinformar_preenc_2").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_naoinformar_preenc_2").mouseout(function(){
+          $("#desconfirmados_naoinformar_2").attr('class', 'd-block');
+          $("#desconfirmados_naoinformar_preenc_2").attr('class', 'd-none');
+        });
+
+        //Desconfirmacoes - Jogador 3
+        $("#desconfirmados_confirmar_3").mouseover(function(){
+          $("#desconfirmados_confirmar_3").attr('class', 'd-none');
+          $("#desconfirmados_confirmar_preenc_3").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_confirmar_preenc_3").mouseout(function(){
+          $("#desconfirmados_confirmar_3").attr('class', 'd-block');
+          $("#desconfirmados_confirmar_preenc_3").attr('class', 'd-none');
+        });
+
+        $("#desconfirmados_naoinformar_3").mouseover(function(){
+          $("#desconfirmados_naoinformar_3").attr('class', 'd-none');
+          $("#desconfirmados_naoinformar_preenc_3").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_naoinformar_preenc_3").mouseout(function(){
+          $("#desconfirmados_naoinformar_3").attr('class', 'd-block');
+          $("#desconfirmados_naoinformar_preenc_3").attr('class', 'd-none');
+        });
+
+        //Desconfirmacoes - Jogador 4
+        $("#desconfirmados_confirmar_4").mouseover(function(){
+          $("#desconfirmados_confirmar_4").attr('class', 'd-none');
+          $("#desconfirmados_confirmar_preenc_4").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_confirmar_preenc_4").mouseout(function(){
+          $("#desconfirmados_confirmar_4").attr('class', 'd-block');
+          $("#desconfirmados_confirmar_preenc_4").attr('class', 'd-none');
+        });
+
+        $("#desconfirmados_naoinformar_4").mouseover(function(){
+          $("#desconfirmados_naoinformar_4").attr('class', 'd-none');
+          $("#desconfirmados_naoinformar_preenc_4").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_naoinformar_preenc_4").mouseout(function(){
+          $("#desconfirmados_naoinformar_4").attr('class', 'd-block');
+          $("#desconfirmados_naoinformar_preenc_4").attr('class', 'd-none');
+        });
+
+        //Desconfirmacoes - Jogador 5
+        $("#desconfirmados_confirmar_5").mouseover(function(){
+          $("#desconfirmados_confirmar_5").attr('class', 'd-none');
+          $("#desconfirmados_confirmar_preenc_5").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_confirmar_preenc_5").mouseout(function(){
+          $("#desconfirmados_confirmar_5").attr('class', 'd-block');
+          $("#desconfirmados_confirmar_preenc_5").attr('class', 'd-none');
+        });
+
+        $("#desconfirmados_naoinformar_5").mouseover(function(){
+          $("#desconfirmados_naoinformar_5").attr('class', 'd-none');
+          $("#desconfirmados_naoinformar_preenc_5").attr('class', 'd-block');
+        });
+
+        $("#desconfirmados_naoinformar_preenc_5").mouseout(function(){
+          $("#desconfirmados_naoinformar_5").attr('class', 'd-block');
+          $("#desconfirmados_naoinformar_preenc_5").attr('class', 'd-none');
+        });                
+
+        //Nao Informado - Jogador 1
+        $("#naoinformado_confirmar_1").mouseover(function(){
+          $("#naoinformado_confirmar_1").attr('class', 'd-none');
+          $("#naoinformado_confirmar_preenc_1").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_confirmar_preenc_1").mouseout(function(){
+          $("#naoinformado_confirmar_1").attr('class', 'd-block');
+          $("#naoinformado_confirmar_preenc_1").attr('class', 'd-none');
+        });
+
+        $("#naoinformado_desconfirmar_1").mouseover(function(){
+          $("#naoinformado_desconfirmar_1").attr('class', 'd-none');
+          $("#naoinformado_desconfirmar_preenc_1").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_desconfirmar_preenc_1").mouseout(function(){
+          $("#naoinformado_desconfirmar_1").attr('class', 'd-block');
+          $("#naoinformado_desconfirmar_preenc_1").attr('class', 'd-none');
+        });        
+
+        //Nao Informado - Jogador 2
+        $("#naoinformado_confirmar_2").mouseover(function(){
+          $("#naoinformado_confirmar_2").attr('class', 'd-none');
+          $("#naoinformado_confirmar_preenc_2").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_confirmar_preenc_2").mouseout(function(){
+          $("#naoinformado_confirmar_2").attr('class', 'd-block');
+          $("#naoinformado_confirmar_preenc_2").attr('class', 'd-none');
+        });
+
+        $("#naoinformado_desconfirmar_2").mouseover(function(){
+          $("#naoinformado_desconfirmar_2").attr('class', 'd-none');
+          $("#naoinformado_desconfirmar_preenc_2").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_desconfirmar_preenc_2").mouseout(function(){
+          $("#naoinformado_desconfirmar_2").attr('class', 'd-block');
+          $("#naoinformado_desconfirmar_preenc_2").attr('class', 'd-none');
+        });        
+
+        //Nao Informado - Jogador 3
+        $("#naoinformado_confirmar_3").mouseover(function(){
+          $("#naoinformado_confirmar_3").attr('class', 'd-none');
+          $("#naoinformado_confirmar_preenc_3").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_confirmar_preenc_3").mouseout(function(){
+          $("#naoinformado_confirmar_3").attr('class', 'd-block');
+          $("#naoinformado_confirmar_preenc_3").attr('class', 'd-none');
+        });
+
+        $("#naoinformado_desconfirmar_3").mouseover(function(){
+          $("#naoinformado_desconfirmar_3").attr('class', 'd-none');
+          $("#naoinformado_desconfirmar_preenc_3").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_desconfirmar_preenc_3").mouseout(function(){
+          $("#naoinformado_desconfirmar_3").attr('class', 'd-block');
+          $("#naoinformado_desconfirmar_preenc_3").attr('class', 'd-none');
+        });        
+
+        //Nao Informado - Jogador 4
+        $("#naoinformado_confirmar_4").mouseover(function(){
+          $("#naoinformado_confirmar_4").attr('class', 'd-none');
+          $("#naoinformado_confirmar_preenc_4").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_confirmar_preenc_4").mouseout(function(){
+          $("#naoinformado_confirmar_4").attr('class', 'd-block');
+          $("#naoinformado_confirmar_preenc_4").attr('class', 'd-none');
+        });
+
+        $("#naoinformado_desconfirmar_4").mouseover(function(){
+          $("#naoinformado_desconfirmar_4").attr('class', 'd-none');
+          $("#naoinformado_desconfirmar_preenc_4").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_desconfirmar_preenc_4").mouseout(function(){
+          $("#naoinformado_desconfirmar_4").attr('class', 'd-block');
+          $("#naoinformado_desconfirmar_preenc_4").attr('class', 'd-none');
+        });        
+
+        //Nao Informado - Jogador 5
+        $("#naoinformado_confirmar_5").mouseover(function(){
+          $("#naoinformado_confirmar_5").attr('class', 'd-none');
+          $("#naoinformado_confirmar_preenc_5").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_confirmar_preenc_5").mouseout(function(){
+          $("#naoinformado_confirmar_5").attr('class', 'd-block');
+          $("#naoinformado_confirmar_preenc_5").attr('class', 'd-none');
+        });
+
+        $("#naoinformado_desconfirmar_5").mouseover(function(){
+          $("#naoinformado_desconfirmar_5").attr('class', 'd-none');
+          $("#naoinformado_desconfirmar_preenc_5").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_desconfirmar_preenc_5").mouseout(function(){
+          $("#naoinformado_desconfirmar_5").attr('class', 'd-block');
+          $("#naoinformado_desconfirmar_preenc_5").attr('class', 'd-none');
+        });        
+
+        //Nao Informado - Jogador 6
+        $("#naoinformado_confirmar_6").mouseover(function(){
+          $("#naoinformado_confirmar_6").attr('class', 'd-none');
+          $("#naoinformado_confirmar_preenc_6").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_confirmar_preenc_6").mouseout(function(){
+          $("#naoinformado_confirmar_6").attr('class', 'd-block');
+          $("#naoinformado_confirmar_preenc_6").attr('class', 'd-none');
+        });
+
+        $("#naoinformado_desconfirmar_6").mouseover(function(){
+          $("#naoinformado_desconfirmar_6").attr('class', 'd-none');
+          $("#naoinformado_desconfirmar_preenc_6").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_desconfirmar_preenc_6").mouseout(function(){
+          $("#naoinformado_desconfirmar_6").attr('class', 'd-block');
+          $("#naoinformado_desconfirmar_preenc_6").attr('class', 'd-none');
+        });        
+
+        //Nao Informado - Jogador 7
+        $("#naoinformado_confirmar_7").mouseover(function(){
+          $("#naoinformado_confirmar_7").attr('class', 'd-none');
+          $("#naoinformado_confirmar_preenc_7").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_confirmar_preenc_7").mouseout(function(){
+          $("#naoinformado_confirmar_7").attr('class', 'd-block');
+          $("#naoinformado_confirmar_preenc_7").attr('class', 'd-none');
+        });
+
+        $("#naoinformado_desconfirmar_7").mouseover(function(){
+          $("#naoinformado_desconfirmar_7").attr('class', 'd-none');
+          $("#naoinformado_desconfirmar_preenc_7").attr('class', 'd-block');
+        });
+
+        $("#naoinformado_desconfirmar_preenc_7").mouseout(function(){
+          $("#naoinformado_desconfirmar_7").attr('class', 'd-block');
+          $("#naoinformado_desconfirmar_preenc_7").attr('class', 'd-none');
+        });        
       });
     </script>
   </head>
@@ -143,67 +603,127 @@
         
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionConfirmacoes">
               <div class="card-body">
-                <table class="table table-striped table-hover table-sm">
+                <table class="table table-striped table-sm">
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
                       <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
-                      <td class="text-center"><img class="d-block" src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img class="d-none" src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_1" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_1" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_1" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_1" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td><script>splitjogador("Phelipe Irineu balãozinho", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_2" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_2" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_2" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_2" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td><script>splitjogador("Márcio Mossoró Aí Nãoooo de Arrascaeta", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_3" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_3" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_3" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_3" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
                       <td><script>splitjogador("Luciano Pezão Skorianez", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_4" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_4" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_4" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_4" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
                       <td><script>splitjogador("Diego Khaled Cristovão Borges", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_5" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_5" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_5" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_5" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">6</th>
                       <td><script>splitjogador("Kaká Sorín Gogó Caxumba", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_6" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_6" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_6" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_6" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">7</th>
                       <td><script>splitjogador("Saulo Ze Love Herreira", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_7" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_7" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_7" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_7" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">8</th>
                       <td><script>splitjogador("Marcelo Pacato Leão", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_8" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_8" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_8" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_8" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">9</th>
                       <td><script>splitjogador("Rodrigo Mãozinha", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_9" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_9" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_9" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_9" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">10</th>
                       <td><script>splitjogador("Dudu Interventor Gasparzinho Gugelmin", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_desconfirmar_10" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_desconfirmar_preenc_10" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="confirmados_naoinformar_10" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="confirmados_naoinformar_preenc_10" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>            
                   </tbody>
                 </table>
@@ -225,37 +745,67 @@
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionConfirmacoes">
               <div class="card-body">
-                <table class="table table-striped table-hover table-sm">
+                <table class="table table-striped table-sm">
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
                       <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_confirmar_1" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_confirmar_preenc_1" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_naoinformar_1" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_naoinformar_preenc_1" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td><script>splitjogador("Phelipe Irineu balãozinho", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_confirmar_2" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_confirmar_preenc_2" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_naoinformar_2" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_naoinformar_preenc_2" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td><script>splitjogador("Márcio Mossoró Aí Nãoooo de Arrascaeta", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_confirmar_3" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_confirmar_preenc_3" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_naoinformar_3" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_naoinformar_preenc_3" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
                       <td><script>splitjogador("Luciano Pezão Skorianez", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_confirmar_4" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_confirmar_preenc_4" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_naoinformar_4" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_naoinformar_preenc_4" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
                       <td><script>splitjogador("Diego Khaled Cristovão Borges", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_question.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_confirmar_5" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_confirmar_preenc_5" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="desconfirmados_naoinformar_5" src="../img/confirmacao_question.png" width="20" height="20">
+                        <img class="d-none" id="desconfirmados_naoinformar_preenc_5" src="../img/confirmacao_question_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>     
                   </tbody>
                 </table>
@@ -277,49 +827,91 @@
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionConfirmacoes">
               <div class="card-body">
-                <table class="table table-striped table-hover table-sm">
+                <table class="table table-striped table-sm">
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
                       <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_confirmar_1" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_confirmar_preenc_1" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_desconfirmar_1" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_desconfirmar_preenc_1" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">2</th>
                       <td><script>splitjogador("Phelipe Irineu balãozinho", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_confirmar_2" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_confirmar_preenc_2" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_desconfirmar_2" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_desconfirmar_preenc_2" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">3</th>
                       <td><script>splitjogador("Márcio Mossoró Aí Nãoooo de Arrascaeta", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_confirmar_3" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_confirmar_preenc_3" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_desconfirmar_3" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_desconfirmar_preenc_3" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">4</th>
                       <td><script>splitjogador("Luciano Pezão Skorianez", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_confirmar_4" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_confirmar_preenc_4" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_desconfirmar_4" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_desconfirmar_preenc_4" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">5</th>
                       <td><script>splitjogador("Diego Khaled Cristovão Borges", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_confirmar_5" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_confirmar_preenc_5" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_desconfirmar_5" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_desconfirmar_preenc_5" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">6</th>
                       <td><script>splitjogador("Kaká Sorín Gogó Caxumba", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_confirmar_6" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_confirmar_preenc_6" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_desconfirmar_6" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_desconfirmar_preenc_6" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">7</th>
                       <td><script>splitjogador("Saulo Ze Love Herreira", 2);</script></td>
-                      <td class="text-center"><img src="../img/confirmacao_ok_2.png" width="20" height="20"></td>
-                      <td class="text-center"><img src="../img/confirmacao_nao_ok_2.png" width="20" height="20"></td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_confirmar_7" src="../img/confirmacao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_confirmar_preenc_7" src="../img/confirmacao_ok_preenchido.png" width="20" height="20">
+                      </td>
+                      <td class="text-center">
+                        <img class="d-block" id="naoinformado_desconfirmar_7" src="../img/confirmacao_nao_ok_2.png" width="20" height="20">
+                        <img class="d-none" id="naoinformado_desconfirmar_preenc_7" src="../img/confirmacao_nao_ok_preenchido.png" width="20" height="20">
+                      </td>
                     </tr>           
                   </tbody>
                 </table>
