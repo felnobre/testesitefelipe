@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Futebol dos Amigos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+  
+  <style>
+   </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-dark" style="background-color: #536987;">
+    <a class="navbar-brand" href="../main/index.html">
+      <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Futebol dos Amigos
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarsExample01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../meusdados/meusdados.html">Meus dados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../regras/regras.html">Regras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Enquete</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="http://futeboldosamigos.com.br/" target="_blank">
+            <img src="../img/versao_desktop - bg_light.png" width="25" height="25" class="img-fluid">&nbsp;Vers&atilde;o desktop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Sair</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+    <div class="jumbotron">
+      <form>
+        <div class="form-group">
+          <label for="jogador_nome">Nome</label>
+          <input type="text" class="form-control form-control-sm" id="jogador_nome" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="jogador_email">Email</label>
+          <input type="email" class="form-control form-control-sm" id="jogador_email" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="jogador_numero_camisa">Número da Camisa</label>
+          <div class="form-row">
+            <div class="col-3">
+              <input type="text" class="form-control form-control-sm" id="jogador_numero_camisa" maxlength="2" aria-describedby="emailHelp">
+            </div>
+          </div>  
+        </div>
+        <div class="form-group">
+          <label for="jogador_posicao_id">Posi&ccedil;&atilde;o</label>
+          <select class="form-control form-control-sm" id="jogador_posicao_id">
+            <option value="">Selecionar...</option>
+            <option value="1">Goleiro</option>
+            <option value="6">Ala</option>
+            <option value="2">Zagueiro</option>
+            <option value="3">Volante</option>
+            <option value="4">Meia</option>
+            <option value="5">Atacante</option>              
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="jogador_tel">Telefone</label>
+          <div class="form-row">
+            <div class="col-7">
+              <input type="text" class="form-control form-control-sm" id="jogador_tel" maxlength="15" aria-describedby="emailHelp">
+            </div>
+          </div>  
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="jogador_dm">
+            <label class="custom-control-label" for="jogador_dm">Departamento M&eacute;dico (DM)</label>
+          </div>  
+        </div>
+        <div class="form-group">
+          <label for="jogador_time">Meu time favorito</label>
+          <select class="form-control form-control-sm" id="jogador_time">
+            <option value="" >Selecionar...</option>
+            <option value="América Mineiro" >América Mineiro</option>
+            <option value="América-RJ" >América-RJ</option>
+            <option value="Atlético Goianiense" >Atlético Goianiense</option>
+            <option value="Atlético Mineiro" >Atlético Mineiro</option>
+            <option value="Atlético Paranaense" >Atlético Paranaense</option>
+            <option value="Avaí" >Avaí</option>
+            <option value="Bahia" >Bahia</option>
+            <option value="Botafogo" >Botafogo</option>
+            <option value="Bragantino" >Bragantino</option>
+            <option value="Brasil de Pelotas" >Brasil de Pelotas</option>
+            <option value="Ceará" >Ceará</option>
+            <option value="Chapecoense" >Chapecoense</option>
+            <option value="Corinthians" >Corinthians</option>
+            <option value="Coritiba" >Coritiba</option>
+            <option value="CRB" >CRB</option>
+            <option value="Criciúma" >Criciúma</option>
+            <option value="Cruzeiro" >Cruzeiro</option>
+            <option value="Figueirense" >Figueirense</option>
+            <option value="Flamengo" >Flamengo</option>
+            <option value="Fluminense" >Fluminense</option>
+            <option value="Goiás" >Goiás</option>
+            <option value="Grêmio" >Grêmio</option>
+            <option value="Internacional" >Internacional</option>
+            <option value="Joinville" >Joinville</option>
+            <option value="Londrina" >Londrina</option>
+            <option value="Luverdense" >Luverdense</option>
+            <option value="Náutico" >Náutico</option>
+            <option value="Oeste" >Oeste</option>
+            <option value="Palmeiras" >Palmeiras</option>
+            <option value="Paraná" >Paraná</option>
+            <option value="Paysandu" >Paysandu</option>
+            <option value="Ponte Preta" >Ponte Preta</option>
+            <option value="Sampaio Corrêa" >Sampaio Corrêa</option>
+            <option value="Santa Cruz" >Santa Cruz</option>
+            <option value="Santos" >Santos</option>
+            <option value="São Paulo" >São Paulo</option>
+            <option value="Sport" >Sport</option>
+            <option value="Tupi" >Tupi</option>
+            <option value="Vasco da Gama" >Vasco da Gama</option>
+            <option value="Vila Nova" >Vila Nova</option>
+            <option value="Vitória" >Vitória</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="jogador_data_nascimento">Data de Nascimento</label>
+          <div class="form-row">
+            <div class="col-7">
+              <input type="datetime" class="form-control form-control-sm" id="jogador_data_nascimento" maxlength="16" aria-describedby="emailHelp">
+            </div>
+          </div>  
+        </div>
+        <div class="form-group">
+          <label for="jogador_titulos">Quantidade de Títulos</label>
+          <div class="form-row">
+            <div class="col-3">
+              <input type="text" class="form-control form-control-sm" id="jogador_titulos" maxlength="2" aria-describedby="emailHelp">
+            </div>
+          </div>  
+        </div>
+        <div class="form-group">
+          <label for="jogador_titulos_campao">Quantidade de Vitórias no Campão</label>
+          <div class="form-row">
+            <div class="col-3">
+              <input type="text" class="form-control form-control-sm" id="jogador_titulos_campao" maxlength="2" aria-describedby="emailHelp">
+            </div>
+          </div>  
+        </div>
+        <div class="form-group">
+          <label for="jogador_img">Foto do Perfil</label>
+          <input type="file" class="form-control-file" id="jogador_img">
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+  crossorigin="anonymous">
+  </script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
