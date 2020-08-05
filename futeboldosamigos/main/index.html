@@ -35,6 +35,24 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
 
     <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+        }, false);
+      })();
       function splitjogador(nome, qtde) {
         var result = nome.split(" ", qtde).join(" ");
         document.write(result);
@@ -1115,10 +1133,17 @@
                   </tbody>
                 </table>
                 <div>
-                  <form>
+                  <form class="needs-validation" novalidate>
                     <div class="form-row">
                       <div class="col col-10">
                         <input type="text" class="form-control form-control-sm" placeholder="Nome do Avulso" required>
+                        <div class="valid-feedback">
+                          Avulso adicionado!
+                        </div>
+                        <div class="invalid-feedback">
+                          Preencher o Nome do Avulso
+                        </div>
+
                       </div>
                       <div class="col p-0">
                         <button type="submit" class="btn border border-dark btn-sm">
