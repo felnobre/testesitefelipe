@@ -48,14 +48,14 @@
           // If there's exactly one finger inside this element
 
           obj.addEventListener('touchstart', function(event) {
-            event.preventDefault();
+            //event.preventDefault();
             var touch = event.changedTouches[0];
             ts_x = touch.pageX;
             ts_y = touch.pageY;
           }, false);
 
           obj.addEventListener('touchmove', function(event) {
-            event.preventDefault();
+            //event.preventDefault();
             var touch = event.changedTouches[0];
             td_x = touch.pageX - ts_x; // deslocamento na horizontal
             td_y = touch.pageY - ts_y; // deslocamento na vertical
@@ -64,10 +64,10 @@
                 // é horizontal
                 if( td_x < 0 ) {
                   // é para esquerda
-                  alert('esquerda');
+                  
                 } else {
                   // direita
-                  alert('direita');
+                  
                 }
             }
           }, false);
