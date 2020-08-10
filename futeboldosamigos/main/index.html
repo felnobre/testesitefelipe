@@ -94,19 +94,29 @@
         document.write(result);
       }
 
-      function converte_data_hora(datahora){
-        var d = new Date(datahora);
-        var mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
-        var da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
-        var hr = d.getHours();
-        var mn = d.getMinutes();
+      function formatar_data_hora(datahora){
+        var data = new Date(datahora);
 
-        document.write(`${da}/${mo} ${hr}:${mn}`);
+        var dia = (new Intl.DateTimeFormat('pt-Br', {
+          day: '2-digit',
+        }).format(data));
+
+        mes = data.getMonth() + 1;
+
+        var mesextenso = (mes == 1 ? 'Jan' : mes == 2? 'Fev' : mes == 3? 'Mar' : mes == 4? 'Abr' : mes == 5? 'Mai' : mes == 6? 'Jun' : mes == 7? 'Jul' : mes == 8? 'Ago' : mes == 9? 'Set' : mes == 10? 'Out' : mes == 11? 'Nov' : 'Dez');
+
+        var horasminutos = (new Intl.DateTimeFormat('pt-Br', {
+          hour: '2-digit',
+          minute: '2-digit'
+        }).format(data));
+
+        document.write(dia + '/' + mesextenso + ' ' + horasminutos);     
       }
 
 
       //Tratamento do Click e MouseOver/Out - Confirmacao da pelada
       $(document).ready(function(){
+        
         //Tooltips
         $('[data-toggle="tooltip"]').tooltip();
 
@@ -1013,7 +1023,7 @@
           <div class="p-0 bd-highlight"><img src="../img/felipe_platini.JPG" width="90" height="90" class="img-thumbnail rounded-circle"></div>
           <div class="d-flex flex-column bd-highlight mb-3 align-self-center">
             <div class="p-0 bd-highlight ">
-              <b><script>splitjogador("Phelipe Irineu balãozinho", 2);</script>
+              <b><script>splitjogador("Felipe Platini", 2);</script>
               </b>
               &nbsp;<img src="../img/Soccer_Ball_icon-icons.com_76265.png" 
               width="20" height="20" data-toggle="tooltip" data-placement="top" data-html="true" title="Posição no Ballon d'Or"> (7&deg;)
@@ -1051,7 +1061,7 @@
               <img src="../img/calendario_mini.png">
             </div>
             <div class="col col-5 p-1 h6">
-              <b><script>converte_data_hora("08/29/2020 10:00");</script></b>
+              <b><script>formatar_data_hora("09/30/2020 10:30");</script></b>
             </div>
             <div class="col col-1 p-1 d-block" id="confirmacao_sim_1">
               <img src="../img/confirmacao_ok_2.png" width="25" height="25">
