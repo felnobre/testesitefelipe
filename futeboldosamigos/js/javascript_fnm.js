@@ -8,7 +8,7 @@
       
           var obj = document.getElementById('voltar_data');
           obj.addEventListener('touchmove', function(event) {
-            alert('touchmove');
+            $("#voltar_data").attr('class', 'd-none');
           }, false);
 
           obj.addEventListener('touchleave', function(event) {
