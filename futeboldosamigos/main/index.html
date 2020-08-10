@@ -35,10 +35,56 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
 
     <script>
+
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function() {
+        var ts_x;
+        var ts_y;
+
         'use strict';
         window.addEventListener('load', function() {
+          var obj = document.getElementById('confirmacao_pelada');
+          obj.addEventListener('touchmove', function(event) {
+          // If there's exactly one finger inside this element
+          if (event.targetTouches.length == 1) {
+            //var touch = event.targetTouches[0];
+            //console.log(touch.pageX + 'px');
+
+            /*
+            var touch = event.targetTouches[0];
+            // Place element where the finger is
+            obj.style.left = touch.pageX + 'px';
+            obj.style.top = touch.pageY + 'px';
+            */
+          }
+
+          obj.addEventListener('touchstart', function(event) {
+            event.preventDefault();
+            var touch = event.changedTouches[0];
+            ts_x = touch.pageX;
+            ts_y = touch.pageY;
+          }, false);
+
+          obj.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+            var touch = event.changedTouches[0];
+            td_x = touch.pageX - ts_x; // deslocamento na horizontal
+            td_y = touch.pageY - ts_y; // deslocamento na vertical
+            // O movimento principal foi vertical ou horizontal?
+            if( Math.abs( td_x ) > Math.abs( td_y ) ) {
+                // é horizontal
+                if( td_x < 0 ) {
+                  // é para esquerda
+                  console.log('esquerda');
+                } else {
+                  // direita
+                  console.log('direita');
+                }
+            }
+          }, false);
+        }, false);
+
+
           // Fetch all the forms we want to apply custom Bootstrap validation styles to
           var forms = document.getElementsByClassName('needs-validation');
           // Loop over them and prevent submission
@@ -53,10 +99,22 @@
         });
         }, false);
       })();
+      
       function splitjogador(nome, qtde) {
         var result = nome.split(" ", qtde).join(" ");
         document.write(result);
       }
+
+      function converte_data_hora(datahora){
+        var d = new Date(datahora);
+        var mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
+        var da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
+        var hr = d.getHours();
+        var mn = d.getMinutes();
+
+        document.write(`${da}/${mo} ${hr}:${mn}`);
+      }
+
 
       //Tratamento do Click e MouseOver/Out - Confirmacao da pelada
       $(document).ready(function(){
@@ -995,16 +1053,16 @@
         -->
         
 
-        <div class="container mb-3">
+        <div class="container mb-3" id="confirmacao_pelada">
           <div class="row border border-dark shadow rounded">
             <div class="col col-1 p-1">
-              <img src="../img/calendario_voltar_2.png" width="25" height="25">
+              <img src="../img/voltar_data.png" width="25" height="25">
             </div>
             <div class="col col-2 p-1 text-right">
               <img src="../img/calendario_mini.png">
             </div>
             <div class="col col-5 p-1 h6">
-              <b>01/Ago 10:00 hs</b>
+              <b><script>converte_data_hora("08/29/2020 10:00");</script></b>
             </div>
             <div class="col col-1 p-1 d-block" id="confirmacao_sim_1">
               <img src="../img/confirmacao_ok_2.png" width="25" height="25">
@@ -1019,7 +1077,7 @@
               <img src="../img/confirmacao_nao_ok_preenchido.png" width="25" height="25">
             </div>
             <div class="col col-2 p-1 text-right">
-              <img src="../img/calendario_avancar_2.png" width="25" height="25">
+              <img src="../img/avancar_data.png" width="25" height="25">
             </div>
           </div>
         </div>
