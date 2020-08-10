@@ -68,19 +68,19 @@
   <main role="main">
     <div class="jumbotron">
       <div class="col-md-15 mx-auto">
-        <div class="d-flex flex-row bd-highlight mb-1 rounded border border-dark shadow" style="background-color: #b3c9e9;">
-          <div class="p-0 bd-highlight"><img src="../img/felipe_platini.JPG" width="90" height="90" class="img-thumbnail rounded-circle"></div>
-          <div class="d-flex flex-column bd-highlight mb-3 align-self-center">
-            <div class="p-0 bd-highlight ">
+        <div class="d-flex flex-row mb-1 rounded border border-dark shadow" style="background-color: #b3c9e9;">
+          <div class="p-0"><img src="../img/felipe_platini.JPG" width="90" height="90" class="img-thumbnail rounded-circle"></div>
+          <div class="d-flex flex-column mb-3 align-self-center">
+            <div class="p-0">
               <b><script>splitjogador("Felipe Platini", 2);</script>
               </b>
               &nbsp;<img src="../img/Soccer_Ball_icon-icons.com_76265.png" 
               width="20" height="20" data-toggle="tooltip" data-placement="top" data-html="true" title="Posição no Ballon d'Or"> (7&deg;)
             </div>
-            <div class="p-0 bd-highlight">
+            <div class="p-0">
               <img src="../img/trofeu_mini.png" data-toggle="tooltip" data-placement="top" data-html="true" title="Campeonatos ganhos"><b>&nbsp; x 4</b>
             </div>
-            <div class="p-0 bd-highlight">
+            <div class="p-0">
               <img src="../img/campo_mini.png" data-toggle="tooltip" data-placement="top" data-html="true" title="Vitórias Campão"><b>&nbsp; x 5</b>
             </div>
           </div>          
@@ -100,8 +100,8 @@
         </div>
         -->
         
-
-        <div class="container mb-3" id="confirmacao_pelada">
+        <!--
+        <div class="container mb-1" id="confirmacao_pelada">
           <div class="row border border-dark shadow rounded">
             <div class="col col-1 p-1">
               <img src="../img/voltar_data.png" width="25" height="25">
@@ -125,6 +125,38 @@
               <img src="../img/confirmacao_nao_ok_preenchido.png" width="25" height="25">
             </div>
             <div class="col col-2 p-1 text-right">
+              <img src="../img/avancar_data.png" width="25" height="25">
+            </div>
+          </div>
+        </div>          
+        -->
+
+        <div class="d-flex flex-row mb-3 border border-dark shadow rounded justify-content-center align-items-center" id="confirmacao_pelada">
+          <div class="p-1 d-block">
+            <img src="../img/voltar_data.png" width="25" height="25">
+          </div>
+          <div class="p-1 d-block" id="calendario"><img src="../img/calendario_mini.png" alt="Confirmação pelada"><b>01/Ago 10:00 HS</b></div>
+          <div class="p-1 d-block" id="confirmacao_sim_1"><img src="../img/confirmacao_ok_2.png" alt="Confirmação pelada" width="25" height="25"></div>
+          <div class="p-1 d-none" id="confirmacao_sim_2"><img src="../img/confirmacao_ok_preenchido.png" alt="Confirmação pelada" width="25" height="25"></div>
+          <div class="p-1 d-block" id="confirmacao_nao_1"><img src="../img/confirmacao_nao_ok_2.png" alt="Confirmação pelada" width="25" height="25"></div>
+          <div class="p-1 d-none" id="confirmacao_nao_2"><img src="../img/confirmacao_nao_ok_preenchido.png" alt="Confirmação pelada" width="25" height="25"></div>
+          <div class="p-1 d-block">
+            <img src="../img/avancar_data.png" width="25" height="25">
+          </div>
+        </div>
+
+        <div class="container mb-1" id="confirmacao_pelada2">
+          <div class="row border border-dark shadow rounded">
+            <div class="col p-1">
+              <img src="../img/voltar_data.png" width="25" height="25">
+            </div>
+            <div class="col col-10 p-1 text-center">
+              <img src="../img/calendario_mini.png">
+              <b><script>formatar_data_hora("09/30/2020 10:30");</script></b>
+              <img src="../img/confirmacao_ok_2.png" width="25" height="25">
+              <img src="../img/confirmacao_nao_ok_2.png" width="25" height="25">
+            </div>
+            <div class="col p-1">
               <img src="../img/avancar_data.png" width="25" height="25">
             </div>
           </div>
