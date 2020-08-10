@@ -6,13 +6,15 @@
         'use strict';
         window.addEventListener('load', function() {
       
-          var obj = document.getElementById('voltar_data');
+          var obj = document.getElementById('voltar_data_1');
           obj.addEventListener('touchstart', function(event) {
-            $("#voltar_data").attr('class', 'd-none');
+            $("#voltar_data_1").attr('class', 'd-none');
+            $("#voltar_data_2").attr('class', 'd-inline-block');
           }, false);
 
           obj.addEventListener('touchend', function(event) {
-            $("#voltar_data").attr('class', 'd-block');
+            $("#voltar_data_1").attr('class', 'd-inline-block');
+            $("#voltar_data_2").attr('class', 'd-none');            
           }, false);
 
 
