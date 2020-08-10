@@ -5,6 +5,7 @@
 
         'use strict';
         window.addEventListener('load', function() {
+			
           var obj = document.getElementById('confirmacao_pelada');
           obj.addEventListener('touchmove', function(event) {
           // If there's exactly one finger inside this element
