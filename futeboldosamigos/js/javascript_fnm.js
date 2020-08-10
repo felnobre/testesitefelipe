@@ -7,12 +7,12 @@
         window.addEventListener('load', function() {
       
           var obj = document.getElementById('voltar_data');
-          obj.addEventListener('touchmove', function(event) {
+          obj.addEventListener('touchstart', function(event) {
             $("#voltar_data").attr('class', 'd-none');
           }, false);
 
-          obj.addEventListener('touchleave', function(event) {
-            alert('touchleave');
+          obj.addEventListener('touchend', function(event) {
+            $("#voltar_data").attr('class', 'd-block');
           }, false);
 
 
