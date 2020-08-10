@@ -84,27 +84,27 @@
 
         //Confirmacoes pelo usuario comum
         $("#confirmacao_sim_1").click(function(){
-          $("#confirmacao_sim_1").attr('class', 'col col-1 p-1 d-none');
-          $("#confirmacao_sim_2").attr('class', 'col col-1 p-1 d-block');
-          $("#confirmacao_nao_1").attr('class', 'col col-1 p-1 d-block');
-          $("#confirmacao_nao_2").attr('class', 'col col-1 p-1 d-none');
+          $("#confirmacao_sim_1").attr('class', 'd-none');
+          $("#confirmacao_sim_2").attr('class', 'd-inline-block');
+          $("#confirmacao_nao_1").attr('class', 'd-inline-block');
+          $("#confirmacao_nao_2").attr('class', 'd-none');
         });
 
         $("#confirmacao_sim_2").click(function(){
-          $("#confirmacao_sim_1").attr('class', 'col col-1 p-1 d-block');
-          $("#confirmacao_sim_2").attr('class', 'col col-1 p-1 d-none');
+          $("#confirmacao_sim_1").attr('class', 'd-inline-block');
+          $("#confirmacao_sim_2").attr('class', 'd-none');
         });
 
         $("#confirmacao_nao_1").click(function(){
-          $("#confirmacao_sim_1").attr('class', 'col col-1 p-1 d-block');
-          $("#confirmacao_sim_2").attr('class', 'col col-1 p-1 d-none');
-          $("#confirmacao_nao_1").attr('class', 'col col-1 p-1 d-none');
-          $("#confirmacao_nao_2").attr('class', 'col col-1 p-1 d-block');
+          $("#confirmacao_sim_1").attr('class', 'd-inline-block');
+          $("#confirmacao_sim_2").attr('class', 'd-none');
+          $("#confirmacao_nao_1").attr('class', 'd-none');
+          $("#confirmacao_nao_2").attr('class', 'd-inline-block');
         });
 
         $("#confirmacao_nao_2").click(function(){
-          $("#confirmacao_nao_1").attr('class', 'col col-1 p-1 d-block');
-          $("#confirmacao_nao_2").attr('class', 'col col-1 p-1 d-none');
+          $("#confirmacao_nao_1").attr('class', 'd-inline-block');
+          $("#confirmacao_nao_2").attr('class', 'd-none');
         });
 
         //Confirmacoes e definicao do Ballons pelo Adm
