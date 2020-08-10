@@ -46,17 +46,6 @@
           var obj = document.getElementById('confirmacao_pelada');
           obj.addEventListener('touchmove', function(event) {
           // If there's exactly one finger inside this element
-          if (event.targetTouches.length == 1) {
-            //var touch = event.targetTouches[0];
-            //console.log(touch.pageX + 'px');
-
-            /*
-            var touch = event.targetTouches[0];
-            // Place element where the finger is
-            obj.style.left = touch.pageX + 'px';
-            obj.style.top = touch.pageY + 'px';
-            */
-          }
 
           obj.addEventListener('touchstart', function(event) {
             event.preventDefault();
@@ -75,10 +64,10 @@
                 // é horizontal
                 if( td_x < 0 ) {
                   // é para esquerda
-                  console.log('esquerda');
+                  alert('esquerda');
                 } else {
                   // direita
-                  console.log('direita');
+                  alert('direita');
                 }
             }
           }, false);
