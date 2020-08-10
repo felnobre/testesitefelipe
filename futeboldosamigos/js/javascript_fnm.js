@@ -108,6 +108,22 @@
           $("#confirmacao_nao_2").attr('class', 'd-none');
         });
 
+        //$("#voltar_data_1").mouseover(function(){
+          //alert('mouseover');
+        //});
+
+        $("#voltar_data_1").click(function(){
+          alert('click');
+        });
+
+        $("#voltar_data_1").mouseout(function(){
+          alert('mouseout');
+        });
+
+
+
+
+
         //Confirmacoes e definicao do Ballons pelo Adm
         
         //Confirmacoes - Jogador 1
