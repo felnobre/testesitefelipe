@@ -8,11 +8,11 @@
       
           var obj = document.getElementById('voltar_data');
           obj.addEventListener('touchmove', function(event) {
-            document.write('touchmove');
+            alert('touchmove');
           }, false);
 
           obj.addEventListener('touchleave', function(event) {
-            document.write('touchleave');
+            alert('touchleave');
           }, false);
 
 
