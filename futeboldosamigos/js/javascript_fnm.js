@@ -5,7 +5,17 @@
 
         'use strict';
         window.addEventListener('load', function() {
-			
+      
+          var obj = document.getElementById('voltar_data');
+          obj.addEventListener('touchmove', function(event) {
+            alert('touchmove');
+          }, false);
+
+          obj.addEventListener('touchleave', function(event) {
+            alert('touchleave');
+          }, false);
+
+
           var obj = document.getElementById('confirmacao_pelada');
           obj.addEventListener('touchmove', function(event) {
           // If there's exactly one finger inside this element
@@ -107,21 +117,6 @@
           $("#confirmacao_nao_1").attr('class', 'd-inline-block');
           $("#confirmacao_nao_2").attr('class', 'd-none');
         });
-
-        //$("#voltar_data_1").mouseover(function(){
-          //alert('mouseover');
-        //});
-
-        $("#voltar_data_1").click(function(){
-          alert('click');
-        });
-
-        $("#voltar_data_1").mouseout(function(){
-          alert('mouseout');
-        });
-
-
-
 
 
         //Confirmacoes e definicao do Ballons pelo Adm
