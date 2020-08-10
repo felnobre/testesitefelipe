@@ -17,6 +17,17 @@
             $("#voltar_data_2").attr('class', 'd-none');            
           }, false);
 
+          var obj = document.getElementById('avancar_data_1');
+          obj.addEventListener('touchstart', function(event) {
+            $("#avancar_data_1").attr('class', 'd-none');
+            $("#avancar_data_2").attr('class', 'd-inline-block');
+          }, false);
+
+          obj.addEventListener('touchend', function(event) {
+            $("#avancar_data_1").attr('class', 'd-inline-block');
+            $("#avancar_data_2").attr('class', 'd-none');            
+          }, false);
+
 
           var obj = document.getElementById('confirmacao_pelada');
           obj.addEventListener('touchmove', function(event) {
