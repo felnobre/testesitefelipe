@@ -28,6 +28,28 @@
             $("#avancar_data_2").attr('class', 'd-none');            
           }, false);
 
+          var obj = document.getElementById('voltar_data_11');
+          obj.addEventListener('touchstart', function(event) {
+            $("#voltar_data_11").attr('class', 'd-none');
+            $("#voltar_data_21").attr('class', 'd-inline-block');
+          }, false);
+
+          obj.addEventListener('touchend', function(event) {
+            $("#voltar_data_11").attr('class', 'd-inline-block');
+            $("#voltar_data_21").attr('class', 'd-none');            
+          }, false);
+
+          var obj = document.getElementById('avancar_data_11');
+          obj.addEventListener('touchstart', function(event) {
+            $("#avancar_data_11").attr('class', 'd-none');
+            $("#avancar_data_21").attr('class', 'd-inline-block');
+          }, false);
+
+          obj.addEventListener('touchend', function(event) {
+            $("#avancar_data_11").attr('class', 'd-inline-block');
+            $("#avancar_data_21").attr('class', 'd-none');            
+          }, false);          
+
 
           var obj = document.getElementById('confirmacao_pelada');
           obj.addEventListener('touchmove', function(event) {
@@ -100,11 +122,22 @@
       }
 
 
-      //Tratamento do Click e MouseOver/Out - Confirmacao da pelada
+      //Tratamento do Click e MouseOver/Out - Exibição do Ballons e Confirmacao da pelada
       $(document).ready(function(){
         
         //Tooltips
         $('[data-toggle="tooltip"]').tooltip();
+
+        //Visualização do Ballons da rodada
+        $("#ballons_nao_clicado_11").click(function(){
+          $("#ballons_nao_clicado_11").attr('class', 'd-none');
+          $("#ballons_clicado_11").attr('class', 'd-inline-block');
+        });
+
+        $("#ballons_nao_clicado_11").mouseout(function(){
+          $("#ballons_nao_clicado_11").attr('class', 'd-inline-block');
+          $("#ballons_clicado_11").attr('class', 'd-none');
+        });
 
         //Confirmacoes pelo usuario comum
         $("#confirmacao_sim_1").click(function(){
@@ -844,7 +877,7 @@
         });
 
         $("#avulsos_ballons_preenc_1").click(function(){
-          $("#davulsos_ballons_1").attr('class', 'd-block');
+          $("#avulsos_ballons_1").attr('class', 'd-block');
           $("#avulsos_ballons_preenc_1").attr('class', 'd-none');
         });        
 
@@ -875,7 +908,7 @@
         });
 
         $("#avulsos_ballons_preenc_2").click(function(){
-          $("#davulsos_ballons_2").attr('class', 'd-block');
+          $("#avulsos_ballons_2").attr('class', 'd-block');
           $("#avulsos_ballons_preenc_2").attr('class', 'd-none');
         });        
 
@@ -906,7 +939,7 @@
         });
 
         $("#avulsos_ballons_preenc_3").click(function(){
-          $("#davulsos_ballons_3").attr('class', 'd-block');
+          $("#avulsos_ballons_3").attr('class', 'd-block');
           $("#avulsos_ballons_preenc_3").attr('class', 'd-none');
         });        
 
@@ -937,7 +970,7 @@
         });
 
         $("#avulsos_ballons_preenc_4").click(function(){
-          $("#davulsos_ballons_4").attr('class', 'd-block');
+          $("#avulsos_ballons_4").attr('class', 'd-block');
           $("#avulsos_ballons_preenc_4").attr('class', 'd-none');
         });        
 
@@ -968,7 +1001,7 @@
         });
 
         $("#avulsos_ballons_preenc_5").click(function(){
-          $("#davulsos_ballons_5").attr('class', 'd-block');
+          $("#avulsos_ballons_5").attr('class', 'd-block');
           $("#avulsos_ballons_preenc_5").attr('class', 'd-none');
         });                        
       });
