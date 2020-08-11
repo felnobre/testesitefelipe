@@ -692,7 +692,7 @@
         });
 
         $("#naoinformado_ballons_preenc_1").click(function(){
-          $("#dnaoinformado_ballons_1").attr('class', 'd-block');
+          $("#naoinformado_ballons_1").attr('class', 'd-block');
           $("#naoinformado_ballons_preenc_1").attr('class', 'd-none');
         });
 
@@ -723,7 +723,7 @@
         });
 
         $("#naoinformado_ballons_preenc_2").click(function(){
-          $("#dnaoinformado_ballons_2").attr('class', 'd-block');
+          $("#naoinformado_ballons_2").attr('class', 'd-block');
           $("#naoinformado_ballons_preenc_2").attr('class', 'd-none');
         });        
 
@@ -754,7 +754,7 @@
         });
 
         $("#naoinformado_ballons_preenc_3").click(function(){
-          $("#dnaoinformado_ballons_3").attr('class', 'd-block');
+          $("#naoinformado_ballons_3").attr('class', 'd-block');
           $("#naoinformado_ballons_preenc_3").attr('class', 'd-none');
         });        
 
@@ -785,7 +785,7 @@
         });
 
         $("#naoinformado_ballons_preenc_4").click(function(){
-          $("#dnaoinformado_ballons_4").attr('class', 'd-block');
+          $("#naoinformado_ballons_4").attr('class', 'd-block');
           $("#naoinformado_ballons_preenc_4").attr('class', 'd-none');
         });                
 
@@ -816,7 +816,7 @@
         });
 
         $("#naoinformado_ballons_preenc_5").click(function(){
-          $("#dnaoinformado_ballons_5").attr('class', 'd-block');
+          $("#naoinformado_ballons_5").attr('class', 'd-block');
           $("#naoinformado_ballons_preenc_5").attr('class', 'd-none');
         });                
 
@@ -847,7 +847,7 @@
         });
 
         $("#naoinformado_ballons_preenc_6").click(function(){
-          $("#dnaoinformado_ballons_6").attr('class', 'd-block');
+          $("#naoinformado_ballons_6").attr('class', 'd-block');
           $("#naoinformado_ballons_preenc_6").attr('class', 'd-none');
         });                
 
@@ -878,7 +878,7 @@
         });
 
         $("#naoinformado_ballons_preenc_7").click(function(){
-          $("#dnaoinformado_ballons_7").attr('class', 'd-block');
+          $("#naoinformado_ballons_7").attr('class', 'd-block');
           $("#naoinformado_ballons_preenc_7").attr('class', 'd-none');
         });                
 
