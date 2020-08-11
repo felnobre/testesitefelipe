@@ -154,7 +154,7 @@
             </div>
             <div class="col col-10 p-1 text-center">
               <img src="../img/calendario_mini.png">
-              <b><script>formatar_data_hora("09/30/2020 10:30");</script></b>
+              <b><script>formatar_data_hora("08/29/2020 10:30");</script></b>
               <img class ="d-inline-block" id="confirmacao_sim_1" src="../img/confirmacao_ok_2.png" width="25" height="25">
               <img class ="d-none" id="confirmacao_sim_2" src="../img/confirmacao_ok_preenchido.png" width="25" height="25">
               <img class ="d-inline-block" id="confirmacao_nao_1" src="../img/confirmacao_nao_ok_2.png" width="25" height="25">
@@ -166,6 +166,101 @@
             </div>
           </div>
         </div>
+
+        <div class="container mb-1" id="confirmacao_pelada" style="background-color: #bdbdbd;">
+          <div class="row border border-dark shadow rounded">
+            <div class="col p-1" id="voltar_data">
+              <img class ="d-inline-block" id="voltar_data_11" src="../img/voltar_data.png" width="25" height="25">
+              <img class ="d-none" id="voltar_data_21" src="../img/voltar_data_2.png" width="25" height="25">
+            </div>
+            <div class="col col-10 p-1 text-center">
+              <img src="../img/calendario_mini.png">
+              <b><script>formatar_data_hora("08/22/2020 10:30");</script></b>
+              <img class ="d-inline-block" id="ballons_nao_clicado_11" src="../img/ballons.png" width="25" height="25"
+              data-toggle="modal" data-target="#ModalBallonsRodada">
+              <img class ="d-none" id="ballons_clicado_11" src="../img/ballons_preenchido.png" width="25" height="25"
+              data-toggle="modal" data-target="#ModalBallonsRodada">
+            </div>
+            <div class="col p-1">
+              <img class ="d-inline-block" id="avancar_data_11" src="../img/avancar_data.png" width="25" height="25">
+              <img class ="d-none" id="avancar_data_21" src="../img/avancar_data_2.png" width="25" height="25">
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal para exibir os jogadores que estao no Ballons da Rodada -->
+        <div class="modal fade" id="ModalBallonsRodada" tabindex="-1" role="dialog" aria-labelledby="ModalBallonsRodadaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalBallonsRodada">Ballon d'Or</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-striped table-hover table-sm">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Jogador</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><script>splitjogador("Juan Jorge Henrique Zizito Mr. Y", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td><script>splitjogador("Phelipe Irineu balãozinho", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td><script>splitjogador("Márcio Mossoró Aí Nãoooo de Arrascaeta", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td><script>splitjogador("Luciano Pezão Skorianez", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td><script>splitjogador("Diego Khaled Cristovão Borges", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td><script>splitjogador("Kaká Sorín Gogó Caxumba", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td><script>splitjogador("Saulo Ze Love Herreira", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td><script>splitjogador("Marcelo Pacato Leão", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td><script>splitjogador("Rodrigo Mãozinha", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">10</th>
+                      <td><script>splitjogador("Dudu Interventor Gasparzinho Gugelmin", 2);</script></td>
+                    </tr>            
+                    <tr>
+                      <th scope="row">11</th>
+                      <td><script>splitjogador("Felipe Platini", 2);</script></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">12</th>
+                      <td><script>splitjogador("Luis Felipe Madeirada Monteiro", 2);</script></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>        
 
         <div class="accordion" id="accordionConfirmacoes">
           <div class="card border-dark bg-transparent text-light shadow">
@@ -751,7 +846,7 @@
             </tbody>
           </table>
           </div>
-<!-- Modal para exibir os jogadores que estao no Ballons -->
+<!-- Modal para exibir os jogadores que estao no Ballons do Ano Corrente -->
 <div class="modal fade" id="ModalBallons" tabindex="-1" role="dialog" aria-labelledby="ModalBallonsLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
     <div class="modal-content">
