@@ -51,7 +51,7 @@
           }, false);          
 
 
-          var obj = document.getElementById('confirmacao_pelada');
+          var obj = document.getElementById('confirmacao_pelada1');
           obj.addEventListener('touchmove', function(event) {
           // If there's exactly one finger inside this element
 
@@ -127,6 +127,17 @@
         
         //Tooltips
         $('[data-toggle="tooltip"]').tooltip();
+
+        $("#voltar_data_1").click(function(){
+          $("#confirmacao_pelada1").attr('class', 'container mb-1 d-none');
+          $("#confirmacao_pelada2").attr('class', 'container mb-1 d-block');            
+        });
+
+        $("#avancar_data_11").click(function(){
+          $("#confirmacao_pelada1").attr('class', 'container mb-1 d-block');
+          $("#confirmacao_pelada2").attr('class', 'container mb-1 d-none');            
+        });
+
 
         //Visualização do Ballons da rodada
         $("#ballons_nao_clicado_11").click(function(){
