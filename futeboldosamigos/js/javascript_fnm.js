@@ -72,7 +72,8 @@
                 // é horizontal
                 if( td_x < 0 ) {
                   // é para esquerda
-                  
+                  $("#confirmacao_pelada1").attr('class', 'container mb-1 d-none');
+                  $("#confirmacao_pelada2").attr('class', 'container mb-1 d-block');                  
                 } else {
                   // direita
                   
