@@ -52,23 +52,23 @@
 
 
           var obj = document.getElementById('confirmacao_pelada1');
-          obj.addEventListener('touchmove', function(event) {
+          //obj.addEventListener('touchmove', function(event) {
           // If there's exactly one finger inside this element
 
-          obj.addEventListener('touchstart', function(event) {
-            //event.preventDefault();
-            var touch = event.changedTouches[0];
-            ts_x = touch.pageX;
-            ts_y = touch.pageY;
-          }, false);
+            obj.addEventListener('touchstart', function(event) {
+              //event.preventDefault();
+              var touch = event.changedTouches[0];
+              ts_x = touch.pageX;
+              ts_y = touch.pageY;
+            }, false);
 
-          obj.addEventListener('touchmove', function(event) {
-            //event.preventDefault();
-            var touch = event.changedTouches[0];
-            td_x = touch.pageX - ts_x; // deslocamento na horizontal
-            td_y = touch.pageY - ts_y; // deslocamento na vertical
-            // O movimento principal foi vertical ou horizontal?
-            if( Math.abs( td_x ) > Math.abs( td_y ) ) {
+            obj.addEventListener('touchmove', function(event) {
+              //event.preventDefault();
+              var touch = event.changedTouches[0];
+              td_x = touch.pageX - ts_x; // deslocamento na horizontal
+              td_y = touch.pageY - ts_y; // deslocamento na vertical
+              // O movimento principal foi vertical ou horizontal?
+              if( Math.abs( td_x ) > Math.abs( td_y ) ) {
                 // é horizontal
                 if( td_x < 0 ) {
                   // é para esquerda
@@ -78,9 +78,9 @@
                   // direita
                   
                 }
-            }
-          }, false);
-        }, false);
+              }
+            }, false);
+          //}, false);
 
 
           // Fetch all the forms we want to apply custom Bootstrap validation styles to
